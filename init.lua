@@ -227,6 +227,12 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+  -- Rainbow parens
+  {
+    'HiPhish/rainbow-delimiters.nvim',
+  },
+
+  -- Minimap
   {
     'Isrothy/neominimap.nvim',
     init = function()
