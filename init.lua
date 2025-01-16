@@ -875,7 +875,9 @@ require('lazy').setup({
         filter = 'pro',
         override = function()
           return {
-            Normal = { bg = '#1b1b1b' },
+            Normal = {
+              fg = '#ffffff',
+            },
           }
         end,
       }
