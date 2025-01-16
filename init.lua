@@ -147,6 +147,9 @@ vim.opt.splitbelow = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '.', nbsp = '␣', space = '.', eol = '↵', lead = '.' }
 
+-- Set ruler for characters 80 and 120
+-- vim.opt.colorcolumn = '80,120'
+
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
