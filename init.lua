@@ -230,6 +230,14 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+  -- Floating terminal
+  {
+    'numToStr/FTerm.nvim',
+    keys = {
+      { '<Esc><Esc>', '<CMD>lua require("FTerm").toggle()<CR>', mode = 'n' },
+    },
+  },
+
   -- Rainbow parens
   {
     'HiPhish/rainbow-delimiters.nvim',
